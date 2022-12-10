@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <script>
+        window.onload = function () {
+            document.getElementById("btnAlterar").addEventListener("click", function () {
+                var meuParagrafo = document.getElementById("meuParagrafo")
+                meuParagrafo.innerHTML = "Acabei de alterar meu parágrafo"
+            })
+        }
+    </script>
+    <base href="https://www.uol.com.br/">
+</head>
+
+<body>
+    <h1>Minha Página HTML</h1>
+    <p id="meuParagrafo">Isto é um parágrafo</p>
+    <button id="btnAlterar">Alterar parágrafo</button>
+
+    <section>
+        <h1>Links</h1>
+        <a href="carros">Ir para Carros do UOL</a><br>
+        <a href="economia" target="_self" id="o target self ou não colocar nada sempre abre o link na mesma página">Ir
+            para Economia do UOL</a><br>
+        <a href="esporte" target="_blank" id="o blank sempre abrira o link em uma outra aba do navegador">Ir para
+            Esporte do UOL</a><br>
+        <a href="https://www.terra.com.br/">Site Terra</a><br>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        html {
+            background-color: smoke-white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table {
+            background-color: lightgray;
+            width: 65%;
+            border-collapse: collapse;
+            color: black;
+            border: 2px solid black;
+            empty-cells: hide; /*só funciona com border collapse: separate*/
+        }
+
+        thead{
+            background-color: black;
+            color: gray;
+            font-size: 14pt;
+        }
+
+        tbody{
+            font-weight: bold;
+        }
+
+        tfoot{
+            background-color: black;
+            color: gray;
+        }
+
+        tr, td, th {
+            border: 1px solid black;
+        }
+
+        caption{
+            caption-side: bottom;
+            text-align: left;
+            color: blueviolet;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: white;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        tbody tr:hover{
+            background-color: lightcoral;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Tabela 1. Dados pessoais.</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Definição</th>
+            <th>Nascimento</th>
+        </tr>
+        <tr>
+            <td>Natanael Vieira</td>
+            <td>Pai</td>
+            <td>Guaraí - TO</td>
+        </tr>
+        <tr>
+            <td>Thais Vieira</td>
+            <td>Mãe</td>
+            <td>Goiânia - GO</td>
+        </tr>
+        <tr>
+            <td>Hector Bonilla</td>
+            <td>Cachorro</td>
+            <td>Goiânia - GO</td>
+        </tr>
+        <tr>
+            <td>Ameliè Poulain</td>
+            <td>Cachorro</td>
+            <td>São Paulo - SP</td>
+        </tr>
+        <tr>
+            <td>Doroteia Poulain Bonilla</td>
+            <td>Cachorro</td>
+            <td>Goiânia - GO</td>
+        </tr>
+        <tr>
+            <td>Abigail Vieira</td>
+            <td>Bebê</td>
+            <td>Florianópolis - SC</td>
+        </tr>
+        <tr>
+            <td>Rute</td>
+            <td>Bebê</td>
+            <td>Florianópolis - SC</td>
+        </tr>
+    </table><br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Nome</th>
+                <th rowspan="2">Telefone</th>
+                <th colspan="5">Endereço</th>
+
+            </tr>
+            <tr>
+                <th>Rua</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>CEP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Natanaeal Vieira</td>
+                <td>+55 48 99128-6882</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+            <tr>
+                <td>Thais Vieira</td>
+                <td>+55 48 99143-9901</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+            <tr>
+                <td>Hector Bonilla</td>
+                <td>+55 48 99128-6882</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+            <tr>
+                <td>Ameliè Poulain</td>
+                <td>+55 48 99128-6882</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+            <tr>
+                <td>Doroteia Poulain Bonilla</td>
+                <td>+55 48 99128-6882</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+            <tr>
+                <td>Abigail Vieira</td>
+                <td>+55 48 99128-6882</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+            <tr>
+                <td>Rute Vieira</td>
+                <td>+55 48 99128-6882</td>
+                <td>Rua João de Barro</td>
+                <td>219</td>
+                <td>Palhoça</td>
+                <td>Santa Catarina</td>
+                <td>88.138-712</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">Para maiores informações entre em contato conosco</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
